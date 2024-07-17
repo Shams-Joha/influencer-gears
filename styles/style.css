@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* Nav bar design */
 
 .nav-parent {
@@ -135,6 +137,114 @@
 
 /* Banner design Ends */
 
+/* Our Clients Section Starts */
+.divider {
+    max-width: 1110px;
+    max-height: 1px;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.378%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.client-container {
+    max-width: 1110px;
+    max-height: 110px;
+    margin: 0 auto;
+}
+
+.client-logos {
+    /* border: 1px solid tomato; */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Our Clients Section Ends */
+
+/* Popular Container Section Starts */
+
+.popular-container {
+    max-width: 1047px;
+    height: 1662px;
+    margin: 0 auto;
+    border: 1px solid purple;
+    margin-top: 100px;
+}
+
+.card {
+    border: 1px solid red;
+    max-width: 329px;
+    max-height: 476px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 17px 14px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.card-image {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 16px;
+
+}
+
+.c-title {
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.c-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 27px;
+    width: 82px;
+    height: 36px;
+}
+
+.c-description {
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.8%;
+    margin: 0;
+    width: 196px;
+    height: 61px;
+}
+
+
+
+
+
+/* Popular Container Section Ends */
+
+
+
+
+
 /* Responsive Design */
 /* For Mobile */
 @media screen and (max-width: 576px) {
@@ -169,7 +279,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .banner-title {
@@ -178,7 +288,8 @@
         margin-bottom: 15px;
         text-align: center;
     }
-    .banner-d{
+
+    .banner-d {
         margin-top: 0px;
         margin-bottom: 30px;
         text-align: center;
@@ -191,11 +302,29 @@
         margin-bottom: 20px;
         margin-top: 20px;
     }
-    .banner-btn{
+
+    .banner-btn {
         margin-bottom: 50px;
     }
-    
-    
+
+    .client-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .client-icon {
+        max-width: 100%;
+    }
+
+    .client-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+
 
 
 }
