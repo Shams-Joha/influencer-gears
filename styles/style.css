@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Nav bar design */
+
+.nav-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+
+.title {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    /* border: 1px solid blue; */
+}
+
+.list-parent {
+    display: flex;
+    gap: 34px;
+}
+
+.list-items {
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid blue; */
+}
+
+.links {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+/* Banner design Starts */
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid peru; */
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-bottom: 70px;
+    
+}
+
+.banner-left {
+    max-width: 582px;
+    max-height: 270px;
+    /* border: 1px solid aqua; */
+}
+
+.banner-title {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 582px;
+    max-height: 133px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.banner-d {
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 505px;
+    max-height: 60.9px;
+    margin-bottom: 16px;
+}
+
+.banner-btn {
+    border-radius: 2.56rem;
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    padding: 10px 24px 10px 24px;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: 0;
+    max-width: 196px;
+    max-height: 44px;
+}
+
+.banner-right {
+    display: flex;
+    max-width: 475px;
+    max-height: 475px;
+    /* border: 1px solid red; */
+}
+
+.main-cam {
+    position: relative;
+    max-width: 440px;
+    max-height: 414px;
+    z-index: 1;
+    /* border: 1px solid blue; */
+    top: 30px;
+}
+
+.cam-bg {
+    position: relative;
+    right: 442px;
+    max-width: 475px;
+    max-height: 475px;
+    /* border: 1px solid green; */
+
+}
+
+
+/* Banner design Ends */
+
+/* Responsive Design */
+/* For Mobile */
+@media screen and (max-width: 576px) {
+
+    .nav-parent,
+    .list-parent {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .list-items {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .nav-parent {
+        max-width: 100%;
+    }
+
+}
+
+/* For Tablet */
+
+@media screen and (min-width:577px) and (max-width:992px) {}
