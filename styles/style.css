@@ -54,7 +54,7 @@
     margin-right: 120px;
     margin-left: 120px;
     margin-bottom: 70px;
-    
+
 }
 
 .banner-left {
@@ -66,9 +66,8 @@
 .banner-title {
     color: rgb(58, 58, 58);
     font-family: Poppins;
-    font-size: 3.2rem;
+    font-size: 3.2em;
     font-weight: 700;
-    line-height: 70px;
     letter-spacing: 0px;
     text-align: left;
     max-width: 582px;
@@ -107,30 +106,32 @@
 }
 
 .banner-right {
-    display: flex;
+    /* justify-content: center; */
     max-width: 475px;
     max-height: 475px;
+    position: relative;
     /* border: 1px solid red; */
 }
 
 .main-cam {
     position: relative;
-    max-width: 440px;
-    max-height: 414px;
+    max-width: 100%;
+    max-height: 100%;
     z-index: 1;
+    top: 0;
     /* border: 1px solid blue; */
-    top: 30px;
 }
 
 .cam-bg {
-    position: relative;
-    right: 442px;
-    max-width: 475px;
-    max-height: 475px;
+    position: absolute;
+    max-width: 100%;
+
+    z-index: 0;
+    top: 0;
+    left: 0;
     /* border: 1px solid green; */
 
 }
-
 
 /* Banner design Ends */
 
@@ -154,6 +155,48 @@
     .nav-parent {
         max-width: 100%;
     }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .banner-left {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .banner-d{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+
+    .banner-right {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .banner-btn{
+        margin-bottom: 50px;
+    }
+    
+    
+
 
 }
 
